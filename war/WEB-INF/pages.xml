@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages xmlns="http://jboss.com/products/seam/pages"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.2.xsd">
+
+    <page view-id="/*">
+        <navigation from-action="#{wizard.cancel()}">
+			<end-conversation before-redirect="true" />    	
+            <redirect view-id="/home.xhtml"/>
+        </navigation>
+    </page>
+    
+    <page view-id="/home.xhtml">
+        <navigation from-action="#{wizard.start()}">
+			<begin-conversation/>    	
+            <render view-id="/who.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/who.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/name.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/name.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/number.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/number.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/fulltime.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/fulltime.xhtml">
+        <navigation from-action="#{wizard.left()}">
+            <render view-id="/residence.xhtml"/>
+        </navigation>
+        <navigation from-action="#{wizard.right()}">
+            <render view-id="/living.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/living.xhtml">
+        <navigation from-action="#{wizard.left()}">
+            <render view-id="/residence.xhtml"/>
+        </navigation>
+        <navigation from-action="#{wizard.middle()}">
+            <render view-id="/study.xhtml"/>
+        </navigation>
+        <navigation from-action="#{wizard.right()}">
+            <render view-id="/exactly.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/study.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/neighbour.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/exactly.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/neighbour.xhtml"/>
+        </navigation>
+    </page>
+
+    <page view-id="/neighbour.xhtml">
+        <navigation from-action="#{wizard.proceed()}">
+            <render view-id="/residence.xhtml"/>
+        </navigation>
+    </page>
+
+</pages>

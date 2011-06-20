@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram model-entity="SeamPagesDiagram">
+ <item ID="#*" NAME="#x*" PATH="/*" SHAPE="24,17,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/home.xhtml" NAME="output" PATH="/home.xhtml"
+   TARGET="#xhome.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#home.xhtml" NAME="#xhome.xhtml" PATH="/home.xhtml"
+  SHAPE="344,17,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/who.xhtml" NAME="output" PATH="/who.xhtml"
+   TARGET="#xwho.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#who.xhtml" NAME="#xwho.xhtml" PATH="/who.xhtml"
+  SHAPE="24,121,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/name.xhtml" NAME="output" PATH="/name.xhtml"
+   TARGET="#xname.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#name.xhtml" NAME="#xname.xhtml" PATH="/name.xhtml"
+  SHAPE="24,225,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/number.xhtml" NAME="output" PATH="/number.xhtml"
+   TARGET="#xnumber.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#number.xhtml" NAME="#xnumber.xhtml" PATH="/number.xhtml"
+  SHAPE="24,329,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/fulltime.xhtml" NAME="output" PATH="/fulltime.xhtml"
+   TARGET="#xfulltime.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#fulltime.xhtml" NAME="#xfulltime.xhtml"
+  PATH="/fulltime.xhtml" SHAPE="24,433,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/residence.xhtml" NAME="output" PATH="/residence.xhtml"
+   TARGET="#xresidence.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+  <output ID="/living.xhtml" NAME="output1" PATH="/living.xhtml"
+   TARGET="#xliving.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#living.xhtml" NAME="#xliving.xhtml" PATH="/living.xhtml"
+  SHAPE="24,537,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/residence.xhtml" NAME="output" PATH="/residence.xhtml"
+   TARGET="#xresidence.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+  <output ID="/study.xhtml" NAME="output1" PATH="/study.xhtml"
+   TARGET="#xstudy.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+  <output ID="/exactly.xhtml" NAME="output2" PATH="/exactly.xhtml"
+   TARGET="#xexactly.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item NAME="#xresidence.xhtml" PATH="/residence.xhtml"
+  SHAPE="408,433,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/*" NAME="output" PATH="/*" TARGET="#x*" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#study.xhtml" NAME="#xstudy.xhtml" PATH="/study.xhtml"
+  SHAPE="504,561,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/neighbour.xhtml" NAME="output" PATH="/neighbour.xhtml"
+   TARGET="#xneighbour.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#exactly.xhtml" NAME="#xexactly.xhtml" PATH="/exactly.xhtml"
+  SHAPE="504,713,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/neighbour.xhtml" NAME="output" PATH="/neighbour.xhtml"
+   TARGET="#xneighbour.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#neighbour.xhtml" NAME="#xneighbour.xhtml"
+  PATH="/neighbour.xhtml" SHAPE="824,561,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/residence.xhtml" NAME="output" PATH="/residence.xhtml"
+   TARGET="#xresidence.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+</diagram>
